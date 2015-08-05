@@ -6,7 +6,7 @@ export default Ember.Controller.extend({
   actions: {
     trocaDisponibilidade(jogo){
       jogo.set('situacao',  !jogo.get('situacao'));
-
+      jogo.save();
     }
   }
 
