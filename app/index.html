@@ -15,8 +15,27 @@
     {{content-for 'head-footer'}}
   </head>
   <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">STRIKE7</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="jogos"><a href="jogos">Jogos</a></li>
+            <li><a href="jogos/new">Novo</a></li>
+            <li><a href="#contact">Sobre</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
     {{content-for 'body'}}
-
     <script src="assets/vendor.js"></script>
     <script src="assets/sistema-strike7.js"></script>
 

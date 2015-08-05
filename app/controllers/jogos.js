@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
   situacao: "Alugado",
   actions: {
     trocaDisponibilidade(jogo){
-      jogo.set('situacao',  !jogo.get('situacao'));
+      jogo.toggleProperty('situacao');
       jogo.save();
     }
   }
