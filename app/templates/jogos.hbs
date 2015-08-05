@@ -1,12 +1,14 @@
 
 
 <table>
+  {{#each model as |game|}}
   <tr>
-    <td><img src="" /></td>
-    <td>{{titulo}}</td>
-    <td>{{situacao}}</td>
-    <td><a href="#" ></a></td>
+    <td>{{game.titulo}}</td>
+    <td>{{game.situacao}}</td>
+    <td><img src="{{game.cover}}"/></td>
+    <button {{action 'trocaDisponibilidade' game}}>Alternar</button>
   </tr>
+  {{/each}}
 </table>
 
 
