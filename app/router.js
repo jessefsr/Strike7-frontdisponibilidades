@@ -8,6 +8,7 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route('jogos', function() {
     this.route('jogo',{path: "/:jogo_id"});
+    this.route('new');
   });
 });
 
