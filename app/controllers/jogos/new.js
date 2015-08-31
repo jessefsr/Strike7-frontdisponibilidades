@@ -4,7 +4,7 @@ var DEFAULT = {
   titulo: '',
   cover:'',
   situacao: false,
-}
+};
 
 export default Ember.Controller.extend({
   titulo: '',
