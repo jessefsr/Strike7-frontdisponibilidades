@@ -2,17 +2,17 @@ import Ember from 'ember';
 
 var DEFAULT = {
   titulo: '',
-  cover:'',
-  situacao: false,
+  capa:'',
+  disponibilidade: false,
 };
 
 export default Ember.Controller.extend({
   titulo: '',
-  cover:'',
-  situacao: false,
+  capa:'',
+  disponibilidade: false,
   actions : {
     salvar(){
-      var data = this.getProperties("titulo","cover", "situacao");
+      var data = this.getProperties("titulo","capa", "disponibilidade");
       this.store.createRecord("jogo",data).save();
       this.setProperties(DEFAULT);
     }

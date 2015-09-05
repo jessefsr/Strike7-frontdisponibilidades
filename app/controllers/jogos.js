@@ -2,12 +2,12 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   titulo: "Bordelands",
-  situacao: "Alugado",
+  disponibilidade: "Alugado",
   actions: {
     trocaDisponibilidade(jogo){
-      jogo.toggleProperty('situacao');
+      jogo.toggleProperty('disponibilidade');
       jogo.save();
-    }
+      }
   }
 
 });
