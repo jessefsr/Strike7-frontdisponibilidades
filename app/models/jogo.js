@@ -2,8 +2,8 @@ import Ember from 'ember';
 import DS from 'ember-data';
 
 
-var DISPONIVEL_URL = 'https://s3-sa-east-1.amazonaws.com/strike7-image/cover/'
-var ALUGADO_URL = 'https://s3-sa-east-1.amazonaws.com/strike7-image/cover+alugados/'
+var DISPONIVEL_URL = 'https://s3-sa-east-1.amazonaws.com/strike7-image/cover/';
+var ALUGADO_URL = 'https://s3-sa-east-1.amazonaws.com/strike7-image/cover+alugados/';
 
 var Jogo = DS.Model.extend({
   titulo: DS.attr("string"),
