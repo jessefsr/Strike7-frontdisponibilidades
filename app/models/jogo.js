@@ -7,14 +7,14 @@ var ALUGADO_URL = 'https://s3-sa-east-1.amazonaws.com/strike7-image/cover+alugad
 
 var Jogo = DS.Model.extend({
   titulo: DS.attr("string"),
-  situacao: DS.attr("boolean"),
-  cover: DS.attr("string"),
+  disponibilidade: DS.attr("boolean"),
+  capa: DS.attr("string"),
 
-  cover_url: Ember.computed("situacao", "cover", function(){
-      if(this.get("situacao")) {
-        return DISPONIVEL_URL + this.get("cover");
+  cover_url: Ember.computed("disponibilidade", "capa", function(){
+      if(this.get("disponibilidade")) {
+        return DISPONIVEL_URL + this.get("capa");
       } else {
-        return ALUGADO_URL + this.get("cover");
+        return ALUGADO_URL + this.get("capa");
       }
   })
 });
